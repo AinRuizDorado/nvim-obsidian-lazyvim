@@ -1,0 +1,36 @@
+-- return {
+--   "nvim-neo-tree/neo-tree.nvim",
+--   cmd = "Neotree",
+--   keys = {
+--     {
+--       "<leader>tr",
+--       function()
+--         require("neo-tree.command").execute({ toggle = true, dir = LazyVim.root() })
+--       end,
+--       desc = "Explorer NeoTree (Root Dir)",
+--     },
+--     {
+--       "<leader>tR",
+--       function()
+--         require("neo-tree.command").execute({ toggle = true, dir = vim.uv.cwd() })
+--       end,
+--       desc = "Explorer NeoTree (cwd)",
+--     },
+--     { "<leader>e", "<leader>tr", desc = "Explorer NeoTree (Root Dir)", remap = true },
+--     { "<leader>E", "<leader>tR", desc = "Explorer NeoTree (cwd)", remap = true },
+--     {
+--       "<leader>ge",
+--       function()
+--         require("neo-tree.command").execute({ source = "git_status", toggle = true })
+--       end,
+--       desc = "Git Explorer",
+--     },
+--     {
+--       "<leader>be",
+--       function()
+--         require("neo-tree.command").execute({ source = "buffers", toggle = true })
+--       end,
+--       desc = "Buffer Explorer",
+--     },
+--   },
+-- }
