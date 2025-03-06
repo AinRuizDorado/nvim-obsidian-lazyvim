@@ -65,6 +65,3 @@ vim.api.nvim_set_keymap(
   "<Plug>(SpotifyPrev)",
   { silent = true, desc = "Go back to the previous track" }
 )
-
--- center pad
-vim.api.nvim_set_keymap("n", "<leader>cp", ":Centerpad<CR>", { silent = true, desc = "Toggle Centerpad" })

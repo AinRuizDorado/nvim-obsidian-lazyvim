@@ -24,7 +24,11 @@ return {
     workspaces = {
       {
         name = "personal",
-        path = "D:/vault-reading/ain-vault-readings",
+        path = "D:/vault-reading/vault-ain/",
+      },
+      {
+        name = "diario",
+        path = "D:/vault-reading/Notario/",
       },
     },
 
