@@ -1,9 +1,6 @@
 return {
-  --
   "nvim-lualine/lualine.nvim",
   config = function()
-    -- local status = require("nvim-spotify").status
-    -- status:start()
     require("lualine").setup({
       sections = {
         lualine_x = {
@@ -23,6 +20,20 @@ return {
           "encoding",
           "fileformat",
           "filetype",
+          function()
+            local ok, prose = pcall(require, "nvim-prose")
+            if not ok or not prose.is_available() then
+              return ""
+            end
+            return "📝 " .. prose.word_count()
+          end,
+          function()
+            local ok, prose = pcall(require, "nvim-prose")
+            if not ok or not prose.is_available() then
+              return ""
+            end
+            return prose.reading_time()
+          end,
         },
       },
     })
